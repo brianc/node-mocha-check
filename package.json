@@ -1,0 +1,26 @@
+{
+  "name": "mocha-check",
+  "version": "0.0.0",
+  "description": "DSL for quick assertions in mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianc/node-mocha-check.git"
+  },
+  "keywords": [
+    "mocha",
+    "assert"
+  ],
+  "author": "Brian M. Carlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianc/node-mocha-check/issues"
+  },
+  "homepage": "https://github.com/brianc/node-mocha-check",
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
