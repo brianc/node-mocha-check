@@ -22,5 +22,8 @@
   "homepage": "https://github.com/brianc/node-mocha-check",
   "devDependencies": {
     "mocha": "^1.18.2"
+  },
+  "dependencies": {
+    "object-path": "^0.8.0"
   }
 }

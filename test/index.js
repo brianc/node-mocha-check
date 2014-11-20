@@ -25,3 +25,51 @@ describe('something', function() {
     name: 'Santa'
   })
 })
+
+describe('arrays', function() {
+  before(function() {
+    this.something = [{
+      name: 'brian'
+    }, {
+      name: 'aaron'
+    }]
+  })
+
+  check('something', 0, {
+    name: 'brian',
+    name: function(val) {
+      console.log('hit')
+      console.log('hit')
+      console.log('hit')
+      console.log('hit')
+    }
+  })
+
+  check('something', 1, {
+    name: 'aaron'
+  })
+})
+
+describe('nested objects', function() {
+  before(function() {
+    this.something = {
+      person: {
+        name: 'Brian'
+      },
+      friends: [{
+        name: 'Aaron'
+      }, {
+        name: 'Shelley'
+      }]
+    }
+  })
+
+  check('something.person', {
+    name: 'Brian'
+  })
+
+  check('something', {
+    'person.name': 'Brian',
+    'friends.0.name': 'Aaron'
+  })
+})
