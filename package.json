@@ -1,6 +1,6 @@
 {
   "name": "mocha-check",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "DSL for quick assertions in mocha",
   "main": "index.js",
   "scripts": {
